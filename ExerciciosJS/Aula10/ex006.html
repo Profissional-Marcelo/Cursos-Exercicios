@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Eventos em JS -->
+
+    <!-- Mouse chegar na div = mouseenter
+        quando mouse sair da div = mouseout
+         Continuar movendo mouse na div = mousemove
+         clicar e segurar o click = mousedown
+         no momento que soltar após o click segurado = mouseup
+         clicar e soltar rapidamente = click
+
+         CONSULTAR TODOS OS EVENTOS DE JS NA PÁGINA DEVELOPER.MOZILA.ORG PESQUISAR POR EVENT REFERENCE JAVASCRIPT
+        -->
+    <div id="area">
+        interaja...
+    </div>
+    <script>
+        var div = document.getElementById('area')
+        div.addEventListener('click', clicar)
+            div.addEventListener('mouseenter', entrar)
+            div.addEventListener('mouseout', sair)
+
+        function clicar(){
+            
+
+            if (div.style.backgroundColor == 'green') {
+                div.style.backgroundColor = 'blue'
+                div.innerText = 'clicou!'
+            } else {
+                div.style.backgroundColor = 'green'
+                div.style.innerText = 'interaja...'
+            }
+
+       
+        }
+        
+        function entrar(){
+            div.innerText = 'Entrou!'
+        }
+
+        function sair(){
+            div.innerText = 'Saiu!'
+            div.style.backgroundColor = "green"
+        }
+            
+            
+        
+    </script>
+</body>
+</html>
