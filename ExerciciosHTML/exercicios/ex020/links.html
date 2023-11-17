@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+    
+    /* SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-classe
+        :: = pseudo-elemento
+        > = chilldren
+    */
+    
+    
+    
+    
+    
+    body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(255, 131, 131);
+        }
+
+        .especial::before{
+            content: '➜';
+        }
+       
+        .especial::after{
+            content: '⬅';
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Profissional-Marcelo" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/@MarceloHenriqueRei/videos" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://profissional-marcelo.github.io/portifolio/" class="especial">Site do Marcelo</a></li>
+    </ul>
+</body>
+</html>

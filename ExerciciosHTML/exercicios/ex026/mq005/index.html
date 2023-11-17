@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/styleMQ.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="lista">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium consequatur rem aut odit exercitationem explicabo vero iure doloremque hic similique. Alias laudantium assumenda incidunt laborum fugit voluptatibus minus in sequi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptatum cum culpa sapiente. Laborum, vel? Dolor minima aliquid voluptatem consectetur temporibus quos sed, ducimus quis a fugit corrupti expedita sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo velit ut consectetur consequuntur quibusdam iusto voluptatibus tempora mollitia exercitationem, tempore aut sint suscipit odio blanditiis voluptatem architecto eligendi facere?</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium consequatur rem aut odit exercitationem explicabo vero iure doloremque hic similique. Alias laudantium assumenda incidunt laborum fugit voluptatibus minus in sequi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptatum cum culpa sapiente. Laborum, vel? Dolor minima aliquid voluptatem consectetur temporibus quos sed, ducimus quis a fugit corrupti expedita sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo velit ut consectetur consequuntur quibusdam iusto voluptatibus tempora mollitia exercitationem, tempore aut sint suscipit odio blanditiis voluptatem architecto eligendi facere?</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium consequatur rem aut odit exercitationem explicabo vero iure doloremque hic similique. Alias laudantium assumenda incidunt laborum fugit voluptatibus minus in sequi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptatum cum culpa sapiente. Laborum, vel? Dolor minima aliquid voluptatem consectetur temporibus quos sed, ducimus quis a fugit corrupti expedita sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo velit ut consectetur consequuntur quibusdam iusto voluptatibus tempora mollitia exercitationem, tempore aut sint suscipit odio blanditiis voluptatem architecto eligendi facere?</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium consequatur rem aut odit exercitationem explicabo vero iure doloremque hic similique. Alias laudantium assumenda incidunt laborum fugit voluptatibus minus in sequi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptatum cum culpa sapiente. Laborum, vel? Dolor minima aliquid voluptatem consectetur temporibus quos sed, ducimus quis a fugit corrupti expedita sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo velit ut consectetur consequuntur quibusdam iusto voluptatibus tempora mollitia exercitationem, tempore aut sint suscipit odio blanditiis voluptatem architecto eligendi facere?</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                lista.style.display = 'block'
+            } else {
+                lista.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (lista.style.display == 'block'){
+                lista.style.display = 'none'
+            } else {
+                lista.style.display = 'block'
+            }  
+        }
+    </script>
+</body>
+</html>
