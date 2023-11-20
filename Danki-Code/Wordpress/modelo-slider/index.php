@@ -104,6 +104,63 @@
             <div class="clear"></div>
         </div>
     </section>
+    <section class="depoimentos">
+        <div class="center">
+            <h2>Depoimento</h2>
+            <div class="depoimentos-box">
+                <div class="depoimento-single">
+                    <p>" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores tenetur dolorem, ipsam iusto nihil cupiditate. Illum, velit quasi temporibus quis ipsa explicabo recusandae delectus, possimus facilis optio, ducimus excepturi! Nesciunt. "</p>
+                    <p>Guilherme Grillo</p>
+                    <img src="img/oval-2.png" alt="foto">
+                </div>
+                <div class="depoimento-single">
+                    <p>" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores tenetur dolorem, ipsam iusto nihil cupiditate. Illum, velit quasi temporibus quis ipsa explicabo recusandae delectus, possimus facilis optio, ducimus excepturi! Nesciunt. "</p>
+                    <p>Guilherme Grillo</p>
+                    <img src="img/oval-2.png" alt="foto">
+                </div>
+                <div class="depoimento-single">
+                    <p>" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores tenetur dolorem, ipsam iusto nihil cupiditate. Illum, velit quasi temporibus quis ipsa explicabo recusandae delectus, possimus facilis optio, ducimus excepturi! Nesciunt. "</p>
+                    <p>Guilherme Grillo</p>
+                    <img src="img/oval-2.png" alt="foto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <footer>
+        <section class="metodologia">
+        <div class="center">
+            <h2>Conheça nossa metodologia</h2>
+            <p>O que acha de fazermos o que mais gostamos de fazer? Conversar <br> entre em contato por e-mail ou telefone.</p>
+            <a href="/contato">Entrar contato</a>
+        </div>
+
+      </section>
+        <div class="center">
+             <div class="col-footer">
+                <h2>Suporte</h2>
+                <a href="#">Contato</a>
+                <a href="#">FAQ</a>
+             </div>
+             <div class="col-footer">
+                <h2>Suporte</h2>
+                <a href="#">Contato</a>
+                <a href="#">FAQ</a>
+             </div>
+             <div class="col-footer">
+                <h2>Suporte</h2>
+                <a href="#">Contato</a>
+                <a href="#">FAQ</a>
+             </div>
+
+             <div style="width: 40%;text-align: right;" class="col-footer">
+                <img src="img/logo-footer.png" alt="">
+             </div>
+        </div>
+    </footer>
+
     <script src="js/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script type="text/javascript">
@@ -124,6 +181,14 @@
                 }
             }]
 
+        });
+        $('section.depoimentos .depoimentos-box').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            centerMode: false
         });
     </script>
     <script>
