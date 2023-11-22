@@ -19,16 +19,16 @@
                 </div>
             </header>
             <ul class="menu-desktop">
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="contato.php">Contato</a></li>
             </ul>
             <div class="menu-mobile">
                 <span class="material-symbols-outlined"> format_align_right </span>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="sobre.php">Sobre</a></li>
+                    <li><a href="contato.php">Contato</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
