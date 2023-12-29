@@ -14,10 +14,8 @@
     //  0x = hexadecimal 0b = binário 0 = octal 
     //     $num = 0x1A;
     //     echo "O valor da variável é $num"
-
     // $v = "Gustavo";
     // var_dump($v);
-
     // // ou integer)
     // $num = (int) 3e2; // 3 x 10 (2) COERÇÃO
     // echo "O valor é $num ";
