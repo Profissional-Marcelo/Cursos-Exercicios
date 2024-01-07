@@ -1,0 +1,37 @@
+*{
+    
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'lato', sans-serif;
+    
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap; 
+    /* quebra ou não a linha */
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.d1 {
+    flex: 0.1; 
+    /* tamanho total 1 */
+    background-color: blue;
+}
+
+.d2 {
+    flex: 0.5;
+    height: 300px;
+    background-color: red;
+}
+
+.d3 {
+    flex: 0.3;
+    height: 300px;
+  
+    background-color: green;
+}

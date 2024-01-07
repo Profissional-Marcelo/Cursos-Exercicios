@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+.imagem {
+    width: 100%;
+    height: 400px;
+    background-image: url('../../modulo-1/img/download.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: cyan;
+}

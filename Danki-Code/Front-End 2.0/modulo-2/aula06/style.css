@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+@keyframes anim1{
+from{background-color: green;width: 200px; height: 200px;
+}
+to{
+    background-color: red;width: 2px; height:2px;
+}
+
+
+/* OU
+0% {
+background-color: green;
+;}
+
+50%{
+    background-color: red;
+}
+
+100%{
+    background-color: blue;
+}
+
+
+*/
+
+}
+
+.teste{
+    
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: center;
+    /* animation-iteration-count: infinite;  */
+    /* acima, quantas vezes vai durar */
+    
+}

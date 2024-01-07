@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 17px;
+    font-style: italic;
+    
+    
+}
+
+.teste{
+    color: red;
+    font-family: 'Lato', sans-serif;
+}
+
+#teste{
+    color: green;
+}
+
+.paragrafo{
+    font-size: 30px;
+}
+
+[name]{
+    font-size: 50px;
+}
+
+[name=nome]{
+    color: blue;
+}
+
+[type=button]{
+    color: red;
+}
+
