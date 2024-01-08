@@ -163,7 +163,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/slick.min.js"></script>
-    <script type="text/javascript">
+    <script>
         $('section.clientes-slider .slider-container').slick({
             dots: true,
             arrows: false,
