@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Aplicação calculadora dinamica
+        var numero1 = prompt('Informe o primeiro número...');
+        var sinal = prompt('informe o sinal da sua operação...');
+
+
+
+        while(sinal != '-' && sinal != '+' && sinal != '*' && sinal != '/'){
+            alert('Sinal inválido!');
+            sinal = prompt('informe o sinal da sua operação...');
+        }
+
+        var numero2 = prompt('Agora informe o segundo número...');
+
+        // função de converter para inteiro
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+
+        var resultadoFinal = 0;
+        if (sinal == '+'){
+            resultadoFinal = numero1 + numero2;
+        }else if(sinal == '-'){
+            resultadoFinal = numero1 - numero2;
+        }else if (sinal == '/'){
+            resultadoFinal = numero1 / numero2;
+        }else if (sinal == '*'){
+            resultadoFinal = numero1 * numero2;
+        }   
+
+
+        alert('O resultado final é: ' + resultadoFinal);
+
+    </script>
+</body>
+</html>
