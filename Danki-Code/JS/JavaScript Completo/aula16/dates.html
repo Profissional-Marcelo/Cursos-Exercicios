@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ano
+        // alert(date.getFullYear());
+
+        // Dia do mês
+        // alert(date.getDate());
+
+        // Dia da semana
+        // alert(date.getDay());
+
+        // horas
+        // alert(date.getHours());
+
+        // minutos
+        // alert(date.getMinutes());
+
+        // segundos
+        // alert(date.getSeconds());
+
+        // milisegundos
+        // alert(date.getMilliseconds());
+
+        // Definindo datas
+         var date = new Date('11/08/2020');
+        //  alert(date.getDate());
+        var date2 = new Date('11/10/2020');
+
+        // Representação da data em milisegundos
+        // alert(date.getTime());
+
+        var diferenca = (date2.getTime() - date.getTime()) / (1000 * 3600 * 24);
+        alert(diferenca);
+
+    </script>
+</body>
+</html>
