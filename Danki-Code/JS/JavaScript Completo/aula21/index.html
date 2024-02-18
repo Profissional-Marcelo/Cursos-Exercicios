@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+        position: relative;
+        height: 500px;
+    }
+
+    .container > .bloco {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 500px;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .bullets {
+        text-align: center;
+    }
+
+    .bullet-single{
+        margin: 0px 8px;
+        cursor: pointer;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: #ccc;
+    }
+
+    .active-bullet{
+        background-color: #333;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="bloco" style="background-color: red; opacity: 1;"></div>
+        <div class="bloco" style="background-color: blue;"></div>
+        <div class="bloco" style="background-color: black;"></div>
+    </div>
+    <div class="bullets">
+        <div class="bullet-single active-bullet"></div>
+        <div class="bullet-single"></div>
+        <div class="bullet-single"></div>
+    </div>
+
+    <script>
+        var lastIndex = 0;
+        var blocos = document.querySelectorAll('.container .bloco');
+
+        blocos.forEach((item,index)=>{
+            document.querySelectorAll('bullet-single')[index].addEventListener('click', ()=>{
+                    let lastBloco = document.querySelectorAll('.container .bloco')[lastIndex];
+                    let actualImage = document.querySelectorAll('.container .bloco')[index];
+                    lastIndex = index;
+                    // resetar as bullets e setar a nova com base no bloco
+                    let lastBloco = document.querySelectorAll('.container .bloco')[lastIndex];
+                    let actualImage = document.querySelectorAll('.container .bloco')[index];
+                    lastBloco.style.opacity = 0;
+                    actualImage.style.opacity = 1;
+                    
+            })
+        })
+    </script>
+</body>
+</html>

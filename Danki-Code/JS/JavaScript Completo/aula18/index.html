@@ -14,6 +14,18 @@
         el.style.width = 100;
         el.style.height = 100;
         el.style.backgroundColor = 'green';
+
+        //  Maneira de percorrer um array vindo de uma seleção de vários objetos, sem ser o for each
+        for(var i = 0; i < elementos.length; i++){
+            // aqui eu pego o elemento atual, por isso crio a váriavel. 
+            var el = elementos[i];     
+            //  Agora eu posso fazer as mudanças necessárias que eu queira fazer em todos os elementos.
+        }
+        // agora com o foreach
+        nomedavariavel.forEach(nomedoqueeuqueirapegar => {
+                nomedoqueeuqueirapegar.style.display = "none";
+            });
+        //  da mesma forma como a anterior ele vai funcionar e eu consigo realizar qualquer coisa que eu quiser.
     </script>
 </body>
 </html>
