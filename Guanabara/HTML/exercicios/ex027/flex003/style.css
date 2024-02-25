@@ -1,0 +1,15 @@
+
+div.conteiner {
+    display: flex;
+    background-color: lightsalmon;
+    /* Flex-flow = flex direction + flex wrap */
+    flex-flow: row wrap;
+}
+
+div.item {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    text-align: center;
+    flex: auto; 
+    /* vai fazer preencher todo o elemento pai com os elementos filhos, sem permitir espaço em branco */
+}
