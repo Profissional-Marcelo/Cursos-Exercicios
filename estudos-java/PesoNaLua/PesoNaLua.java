@@ -12,7 +12,11 @@ public class PesoNaLua {
         double pesoLua = peso * 17 / 100;
         
         System.out.println("Seu peso na lua é " + pesoLua);
-       
+        
+        
+
+
+
 
     }
 }
