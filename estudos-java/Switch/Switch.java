@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Switch {
     public static void main(String[] args) {
+
+        // Continue joga de volta ao começo do loop, ignorando oque está abaixo
         Scanner ss = new Scanner(System.in);            
 
         System.out.println("Quantas pernas?");
