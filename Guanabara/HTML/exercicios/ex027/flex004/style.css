@@ -1,0 +1,14 @@
+div.conteiner {
+    display: flex;
+    background-color: lightsalmon;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+
+div.item {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    text-align: center;
+}
