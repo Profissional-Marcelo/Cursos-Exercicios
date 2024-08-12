@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Meu comentário de teste
+1 ola
+2 ola
+*/
+
+/* Estilo para o conteúdo do nosso site */
+
+
+.artigo{
+    width: 1280px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.artigo h1{
+    color: #069;
+    font-size: 32px;
+    font-family: "Times new Roman", 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+.artigo p {
+    font-size: 17px;
+    font-family: 'tahoma';
+    font-style: italic;
+    font-weight: bold;
+    line-height: 40px;
+}
