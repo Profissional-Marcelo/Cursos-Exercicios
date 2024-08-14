@@ -1,0 +1,16 @@
+html, body{
+    height: 100%;
+}
+
+.box{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    background-color: gray;
+    overflow: scroll;
+    /* auto regula automtico scroll ou sem */
+}
+
+.box p{
+    width: 500px;
+}
