@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+}
+
+.box{
+    width: 400px;
+    height: auto;
+    background-color: gray;
+}
+
+.box p {
+    color: initial;
+    /* Valor inicial que serve para qualquer propriedae, é o valor inicial do navegador, o paragrafo a cor padrão é o preto, por exemplo */
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+a[href]{
+    background-color: blue;
+}
+/* ou */
+a[href="https://www.google.com"]{
+    background-color: yellow;
+}
+/* ou, ataque todos os href que tenham a palavra google */
+a[href*="google"]{
+    color: green;
+}
+/* ou com " ~ " procure dentro do atributo a palavra com espaço "EXEMPLO"  */
+
+
+/* Dá para pegar também somente o atributo */
+
+a[href|="google"]{
+    background-color: yellow;
+}
