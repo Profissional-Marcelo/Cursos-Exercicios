@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+/* 
+table{
+    width: 900px;  
+    border-collapse: collapse; 
+    tem bordas se colidindo? colidam 
+    margin: 0 auto; 
+}
+
+table tr td{
+    height: 300px;
+    vertical-align: top;
+    border: 1px solid black;
+} */
+
+.menu-fixed{
+    position: fixed;
+    left: 50px;
+    top: 300px;
+    width: 300px;
+    height: 200px;
+    background-color: #069;
+}
+
+.box{
+    width: 100%;
+    height: 1400px;
+    background-color: green;
+}
