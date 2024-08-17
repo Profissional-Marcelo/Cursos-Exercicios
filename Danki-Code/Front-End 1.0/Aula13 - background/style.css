@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.bg{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+
+    /* backgrounds */
+
+    /* background-color: aliceblue; */
+    /* background-image: url('../img/imagem.png'); */
+    /* background-size: 100% auto */
+    /* background-size: cover */
+    /* background-position: center; */
+    /* background-position: left top; */
+    /* background-repeat: no-repeat */
+
+}
