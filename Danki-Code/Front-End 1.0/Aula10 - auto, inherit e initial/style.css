@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+}
+
+.box{
+    color: green;
+    height: 400px;
+    width: 400px;
+    background: gray;
+}
+
+.box2{
+    height: 900px;
+    background: red;
+}
+
+.box > .box2 > span {
+    color: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: red;
+}
