@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+ul{
+    list-style-type: inside;
+}
+
+/* QUERO QUE APENAS O ITEM 2 DE LI SEJA ALTERADO */
+
+ul li:nth-of-type(2){
+    color: red;
+}
+
+/* filhos referentes ao ul, então vai ser o segundo li, da mesma forma que o de cima. */
+
+ul li:nth-child(3){
+    color: red;
+}
+
+.box p:last-of-type{
+    color: rgb(200,200,200)
+}
+
+
+/* Vai atacar todas as divs que não tiverem a .classe */
+
+.box div:not(.classe){
+    background-color: red;
+}
+
+/* comece do primeiro e a cada 2º vai pegar o proximo */
+
+/* ul li:nth-of-type(2n + 1) */
