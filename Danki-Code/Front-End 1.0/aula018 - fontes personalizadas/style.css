@@ -8,3 +8,16 @@ body{
     height: 100%;
 
 }
+
+@font-face {
+    font-family: "Minha Fonte";
+    src: url('Roboto-Regular.ttf');
+}
+
+h2 {
+    font-family: "Minha Fonte";
+}
+
+.box p{
+    font-family: "Minha Fonte";
+}
