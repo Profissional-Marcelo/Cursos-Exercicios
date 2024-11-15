@@ -7,17 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <!-- <form action="">
         <fieldset>
             <legend>Meu formulário</legend>
             <div><input type="text" name="nome" placeholder="Digite o seu nome"></div>
-            <div><input type="text" name="nome" placeholder="Digite o seu e-mail"></div>
+            <div><input type="text" name="email" placeholder="Digite o seu e-mail"></div>
             <div>
                 <select name="lista" id="">
                     <option disabled selected>Qual sua idade?</option>
-                    <option value="">20</option>
-                    <option value="">25+</option>
-                    <option value="">40+</option>
+                    <option value="20">20</option>
+                    <option value="25">25+</option>
+                    <option value="40">40+</option>
                 </select>
             </div>
             <h2>Qual sua cidade?</h2>
@@ -26,17 +26,38 @@
             <div class="radio-input">
                 <div>
                 
-                    <input type="radio" name="cidade"> <span>Florianópolis</span>
+                    <input type="radio" name="cidade" value="Florianópolis"> <span>Florianópolis</span>
                 </div>
                 <div>
                 
-                    <input type="radio" name="cidade"> <span>São Paulo</span>
+                    <input type="radio" name="cidade" value="São Paulo"> <span>São Paulo</span>
                 </div>
                 <div>
                 
-                    <input type="radio" name="cidade"> <span>Rio de Janeiro</span>
+                    <input type="radio" name="cidade" value="Rio de Janeiro"> <span>Rio de Janeiro</span>
                 </div>
             </div>
+
+            <h2>O que você gosta de comer?</h2>
+
+            <div class="radio-input">
+                <div>
+                
+                    <input type="checkbox" name="comidas[]" value="fruta"> <span>Fruta</span>
+                </div>
+                <div>
+                
+                    <input type="checkbox" name="comidas[]" value="Fast Food"> <span>Fast Food</span>
+                </div>
+                <div>
+                
+                    <input type="checkbox" name="comidas[]" value="Salada"> <span>Salada</span>
+                </div>
+            </div>
+
+
+
+
             <div>
                 <textarea name="" id="" placeholder="Possui alguma observação?">olá, tudo bem? olá tudo bem?
                     
@@ -46,6 +67,23 @@
                 <input type="submit" value="Enviar" name="acao">
             </div>
         </fieldset>
-    </form>
+    </form> -->
+
+        <form action="">
+            <!-- <input type="file" name="file" id="file">
+            <label for="file">Clique aqui!</label> -->
+            <!-- <select name="" id="">
+                <option value="">Item 1</option>
+                <option value="">Item 2</option>
+            </select> -->
+            <div>
+                <input type="checkbox" name="checkbox" id="check1">
+                <label for="check1"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" id="check2">
+                <label for="check2"></label>
+            </div>
+        </form>
 </body>
 </html>

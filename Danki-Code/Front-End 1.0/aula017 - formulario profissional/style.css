@@ -7,7 +7,7 @@ body{
     height: 100%;
 }
 
-form{
+/* form{
     width: 96%;
     max-width: 600px;
     margin: 0 auto;
@@ -90,4 +90,56 @@ form input[type=submit]{
     cursor: pointer;
     font-size: 16px;
     border: 2px solid rgb(130, 130, 130);
+} */
+
+/* input[type=file]{
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 20px auto;
+    width: 220px;
+    height: 40px;
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 17px;
+} */
+
+form {
+    text-align: center;
+    background-color: #ccc;
+    padding: 30px 0;
+}
+
+/* form select{
+    width: 220px;
+    height: 40px;
+    appearance: none;
+    border: 0;
+    background-image: url(https://img.freepik.com/vetores-premium/um-grande-sinal-vetorial-quadrado-vermelho-icone-de-bloco-vermelho_302321-2467.jpg?semt=ais_hybrid);
+    padding-left: 10px;
+    background-size: 10px 10px;
+
+} */
+
+input[type=checkbox]{
+    display: none;
+}
+
+label{
+    margin: 0 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+}
+
+input[type=checkbox]:checked + label{
+    width: 30px;
+    height: 30px;
+    background-color: red;
 }
