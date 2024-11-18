@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+/* .sidebar{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    float: left;
+}
+
+.content{
+    width: calc(100% - 300px);
+    height: 100%;
+    background-color: #ccc;
+} */
+/* 
+.box{
+    width: calc((100% / 3) + 90px);
+    height: 90px;
+    background-color: red;
+} */
+
+
+/* viewport width = largura do navegador */
+/* Viewport height = altura do viewport */
+
+ .box{
+    width: 100vw; 
+    height: 90px; 
+    background-color: red;
+} 
+
+.box2{
+    width: 10px;
+    height: 9000px;
+}
