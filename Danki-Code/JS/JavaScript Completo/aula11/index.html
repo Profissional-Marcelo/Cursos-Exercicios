@@ -13,7 +13,7 @@
 
 
 
-        while(sinal != '-' && sinal != '+' && sinal != '*' && sinal != '/'){
+        while(sinal != '-' && sinal != '+' && sinal != '*' && sinal != '.' && sinal !='x' && sinal != '/'){
             alert('Sinal inválido!');
             sinal = prompt('informe o sinal da sua operação...');
         }
@@ -31,7 +31,7 @@
             resultadoFinal = numero1 - numero2;
         }else if (sinal == '/'){
             resultadoFinal = numero1 / numero2;
-        }else if (sinal == '*'){
+        }else if (sinal == '*' || sinal == 'x' || sinal == '.'){
             resultadoFinal = numero1 * numero2;
         }   
 
