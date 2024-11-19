@@ -41,8 +41,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="bloco" style="background-color: red; opacity: 1;"></div>
-        <div class="bloco" style="background-color: blue;"></div>
+        <div class="bloco" style="background-color: rgb(255, 96, 96); opacity: 1;"></div>
+        <div class="bloco" style="background-color: rgb(118, 118, 255);"></div>
         <div class="bloco" style="background-color: black;"></div>
     </div>
     <div class="bullets">
@@ -52,22 +52,27 @@
     </div>
 
     <script>
-        var lastIndex = 0;
-        var blocos = document.querySelectorAll('.container .bloco');
+       var lastIndex = 0;
+       var blocos = document.querySelectorAll('.bloco');
+       blocos.forEach((bloco, index)=>{
+            document.querySelectorAll('.bullet-single')[index]
+            .addEventListener('click', ()=>{
+                let lastBloco = blocos[lastIndex]; 
+                let atualBloco = blocos[index]; 
+                
+                // Resetar as bullets e setar a nova com base na imagem.
 
-        blocos.forEach((item,index)=>{
-            document.querySelectorAll('bullet-single')[index].addEventListener('click', ()=>{
-                    let lastBloco = document.querySelectorAll('.container .bloco')[lastIndex];
-                    let actualImage = document.querySelectorAll('.container .bloco')[index];
-                    lastIndex = index;
-                    // resetar as bullets e setar a nova com base no bloco
-                    let lastBloco = document.querySelectorAll('.container .bloco')[lastIndex];
-                    let actualImage = document.querySelectorAll('.container .bloco')[index];
-                    lastBloco.style.opacity = 0;
-                    actualImage.style.opacity = 1;
-                    
+                document.querySelectorAll('.bullet-single')[lastIndex].classList.remove('active-bullet');
+
+                document.querySelectorAll('.bullet-single')[index].classList.add('active-bullet');
+
+                lastBloco.style.opacity = 0;
+                atualBloco.style.opacity = 1;
+
+                lastIndex = index;
+              
             })
-        })
+       })
     </script>
 </body>
 </html>
