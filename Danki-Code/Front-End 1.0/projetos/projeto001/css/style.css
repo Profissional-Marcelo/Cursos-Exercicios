@@ -14,14 +14,14 @@ html, body{
 }
 
 .center{
-    width: 1200px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 2%;
 }
 
 .header{
-    min-width: 1200px;
     width: 100%;
+    padding: 0 2%;
     height: 60px;
     background-color: #212343;
 }
@@ -31,9 +31,9 @@ html, body{
 }
 
 .container-banner{
-    min-width: 1200px;
     width: 100%;
     height: 557px;
+    padding: 0 2%;
     background-image: url('https://img.freepik.com/fotos-premium/conceito-de-banner-de-tecnologia-de-ti_1426-6076.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -124,8 +124,7 @@ text-align: center;
  }
 
  .container-2{
-    min-width: 1200px;
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color: #CCC;
     text-align: center;
  }
@@ -135,7 +134,8 @@ text-align: center;
  }
 
  .container-2 p{
-    width: 698px;
+    width: 100%;
+    max-width: 768px;
     margin: 15px 0;
     display: inline-block;
     text-align: justify;
@@ -153,8 +153,7 @@ text-align: center;
  }
 
 .section-1{
-    padding: 90px 0;
-    min-width: 1200px;
+    padding: 90px 2%;
 }
 
 .section-1 h2{
@@ -165,9 +164,6 @@ text-align: center;
 
 .container-section{
     margin-top: 40px;
-}
-
-.container-section{
     text-align: center;
 }
 
@@ -183,7 +179,7 @@ text-align: center;
 }
 
 .container-single p{
-    padding: 10px 25px;
+    padding: 10px;
     text-align: justify;
     display: inline-block;
 }
@@ -193,7 +189,88 @@ text-align: center;
 }
 
 .footer{
-    clear: both;
-    border-top: 4px solid #888888;
-    padding: 30px 0;
+    /* clear: both; */
+    border-top: 2px solid #888888;
+    padding: 20px 0;
+    text-align: center;
+    color: #888;
+}
+
+.footer p {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px){
+    .header{
+        padding: 15px 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .header img{
+        margin: 0;
+    }
+
+    .container-banner{
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+     
+    }
+
+    .container-list{
+        padding: 30px 0;
+        float: left;
+        width: 40%;
+        display: inline-block;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .form{
+        max-width: 400px;
+        width: 60%;
+        height: 100%;
+        float: right;
+        top: 0;
+    }
+
+    .input-container input[type=text]{
+        width: 100%;
+    }
+
+    .form input[type=submit]{
+        max-width: 280px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container-2{
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+
+    .container-list{
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .container-single{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 0;
+    }
 }
