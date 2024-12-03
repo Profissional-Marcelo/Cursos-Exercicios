@@ -1,6 +1,9 @@
 <?php
+ class Filha{
 
-    final class Filha{
+        protected function funcaoTeste(){
+            
+        }
         public function mostrarOla(){
             echo 'Ola Mundo';
         }

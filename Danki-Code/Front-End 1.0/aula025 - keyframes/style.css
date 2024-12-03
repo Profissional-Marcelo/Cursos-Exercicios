@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.box{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: green;
+}
+div.box:hover{
+   
+    animation-name: animacao_1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* shortcurt: animation: animacao_1 2s 1s infinite; */
+}
+
+@keyframes animacao_1{
+    /* Ou
+    0%{
+        background-color: green;
+    }
+
+    25%{
+        background-color: orange;
+    }
+
+    100%{
+        background-color: red;
+    }
+    */
+    
+    from {
+        left: 0;
+        top: 0px;
+        background-color: green;
+    }
+
+    to {
+        left: 100px;
+        top: 10px;
+        background-color: red;
+    }
+
+}
