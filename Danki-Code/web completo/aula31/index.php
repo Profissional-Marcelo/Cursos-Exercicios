@@ -1,0 +1,33 @@
+<?php 
+    $pdo = new PDO('mysql:host=localhost;dbname=modulo_8', 'root', '');
+
+    // puxando todos os dados da tabela
+
+    $sql = $pdo->prepare("SELECT * FROM posts WHERE categoria_id = ?");
+
+    $sql->execute(array($_GET['categoria_id']));
+
+    $info = $sql->fetchAll();
+
+    // echo '<pre>';
+    // print_r($info);
+    // echo '</pre>';
+
+//duas formas de puxar as tabelas de forma normal
+
+    // foreach ($info as $key => $value) {
+    //     echo 'Titulo: '.$value['titulo'];
+    //     echo '<br />';
+    //     echo 'Noticia: '.$value['conteudo'];
+    //     echo '<hr>';
+
+    // }
+
+    // for($i = 0; $i < count($info); $i++){
+    //     echo 'titulo: '.$info[$i]['titulo'];
+    //     echo '<br />';
+    //     echo 'noticia: '.$info[$i]['conteudo'];
+    //     echo '<hr>';
+    // }
+
+?>
