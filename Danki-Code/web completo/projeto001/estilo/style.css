@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+}
+
+/**Boot css**/
+
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+div.clear{
+    clear: both;
+}
