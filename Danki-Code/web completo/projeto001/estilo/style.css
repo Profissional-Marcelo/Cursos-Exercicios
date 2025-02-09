@@ -8,8 +8,13 @@
 /**Boot css**/
 
 .center{
+    margin: 0 auto;
     max-width: 1280px;
     padding: 0 2%;
+}
+
+.w33{
+    width: 33.3%;
 }
 
 .w50{
@@ -26,4 +31,42 @@
 
 div.clear{
     clear: both;
+}
+
+/***Estilização do site ***/
+
+header{
+    background-color: #30437A;
+    padding: 20px 0;
+}
+
+header .logo{
+    font-size: 23px;
+    color: white;
+    font-weight: 300px;
+    text-transform: uppercase;
+}
+
+.mobile {
+    display: none;
+}
+
+nav.desktop ul{
+    position: relative;
+    top: 6px;
+    list-style-type: none;
+}
+
+nav.desktop li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0 30px;
+    font-weight: 300px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+   
 }

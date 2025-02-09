@@ -18,8 +18,8 @@
 <body>
     <header>
         <div class="center">
-            <div class="logo">Logomarca</div>
-            <nav class="desktop">
+            <div class="logo left">Logomarca</div>
+            <nav class="desktop right">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Sobre</a></li>
@@ -27,7 +27,7 @@
                     <li><a href="">Contato</a></li>
                 </ul>
             </nav>
-            <nav class="mobile">
+            <nav class="mobile right">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Sobre</a></li>
@@ -35,6 +35,7 @@
                     <li><a href="">Contato</a></li>
                 </ul>
             </nav>
+            <div class="clear"></div>
         </div>
     </header>
     <section class="banner-principal">
@@ -62,17 +63,17 @@
 
         <div class="center">
             <h2 class="title">Especialidades</h2>
-            <div class="box-especialidade">
+            <div class="w33 left box-especialidade">
                 <h3><i class="fa-brands fa-css3"></i></h3>
                 <h3>CSS3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur est accusamus veniam, autem eos mollitia sed esse obcaecati. Fugit optio autem quis repellat repudiandae similique, ut voluptate delectus id!</p>
             </div>
-            <div class="box-especialidade">
+            <div class="w33 left box-especialidade">
                 <h3><i class="fa-brands fa-html5"></i></h3>
                 <h3>HTML5</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur est accusamus veniam, autem eos mollitia sed esse obcaecati. Fugit optio autem quis repellat repudiandae similique, ut voluptate delectus id!</p>
             </div>
-            <div class="box-especialidade">
+            <div class="w33 left box-especialidade">
                 <h3><i class="fa-solid fa-box"></i></h3>
                 <h3>JavaScript</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur est accusamus veniam, autem eos mollitia sed esse obcaecati. Fugit optio autem quis repellat repudiandae similique, ut voluptate delectus id!</p>
